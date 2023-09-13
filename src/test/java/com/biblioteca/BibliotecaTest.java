@@ -34,13 +34,6 @@ public class BibliotecaTest {
         biblioteca.RemoverLivro(livro);
         assertFalse(biblioteca.getLivros().contains(livro));
     }
-    
-    @Test
-    public void testRemoverLivroFailed() {
-        biblioteca.AdicionarLivro(livro);
-        biblioteca.RemoverLivro(livro);
-        assertTrue(biblioteca.getLivros().contains(livro));
-    }
 
     @Test
     public void testAdicionarAutor() {
