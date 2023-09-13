@@ -47,4 +47,21 @@ public class Biblioteca {
     public void RemoverEstoque(LivroEstoque livroEstoque) {
         this.estoque.remove(livroEstoque);
     }
+
+    //métodos getters necessarios para classe de testes
+	public ArrayList<Livro> getLivros() {
+		return livros;
+	}
+
+	public ArrayList<Autor> getAutores() {
+		return autores;
+	}
+
+	public ArrayList<Editora> getEditoras() {
+		return editoras;
+	}
+
+	public ArrayList<LivroEstoque> getEstoque() {
+		return estoque;
+	}
 }
