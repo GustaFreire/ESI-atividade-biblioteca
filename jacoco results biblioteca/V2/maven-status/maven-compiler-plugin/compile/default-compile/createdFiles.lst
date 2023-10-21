@@ -1,0 +1,7 @@
+com/biblioteca/Biblioteca.class
+com/biblioteca/Livro.class
+com/biblioteca/LivroEstoque.class
+com/biblioteca/Venda.class
+com/biblioteca/Autor.class
+com/biblioteca/LivroVenda.class
+com/biblioteca/Editora.class

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LivroVenda.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">biblioteca</a> &gt; <a href="index.source.html" class="el_package">com.biblioteca</a> &gt; <span class="el_source">LivroVenda.java</span></div><h1>LivroVenda.java</h1><pre class="source lang-java linenums">package com.biblioteca;
+
+public class LivroVenda {
+
+    public LivroEstoque livroDoEstoque;
+    public int quantidade;
+
+<span class="fc" id="L8">    public LivroVenda() {</span>
+
+<span class="fc" id="L10">    }</span>
+
+<span class="fc" id="L12">    public LivroVenda(LivroEstoque livroDoEstoque, int quantidade) {</span>
+<span class="fc" id="L13">        this.livroDoEstoque = livroDoEstoque;</span>
+<span class="fc" id="L14">        this.quantidade = quantidade;</span>
+<span class="fc" id="L15">    }</span>
+
+    /*
+     * Incrementa um exemplar
+     */
+    public void IncrementarQuantidade() {
+<span class="fc" id="L21">        this.quantidade++;</span>
+<span class="fc" id="L22">    }</span>
+
+    /*
+     * Incrementa um exemplar
+     */
+    public void IncrementarQuantidade(int quantidade) {
+<span class="fc" id="L28">        this.quantidade += quantidade;</span>
+<span class="fc" id="L29">    }</span>
+
+    /*
+     * Retorna true se conseguiu pode decrementar ou false se a quantidade já for 0
+     */
+    public boolean DecrementarQuantidade() {
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        if (this.quantidade == 0) {</span>
+<span class="fc" id="L36">            return false;</span>
+        } else {
+<span class="fc" id="L38">            this.quantidade--;</span>
+<span class="fc" id="L39">            return true;</span>
+        }
+    }
+
+    /*
+     * Retorna true se conseguiu pode decrementar ou false se a quantidade não for possível decrementar
+     */
+    public boolean DecrementarQuantidade(int quantidade) {
+<span class="fc bfc" id="L47" title="All 2 branches covered.">        if (this.quantidade &lt; quantidade) {</span>
+<span class="fc" id="L48">            return false;</span>
+        } else {
+<span class="fc" id="L50">            this.quantidade--;</span>
+<span class="fc" id="L51">            return true;</span>
+        }
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
