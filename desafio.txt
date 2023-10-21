@@ -1,0 +1,10 @@
+Pergunta: é possível obter cobertura de 100%?
+
+  Resposta: sim, conseguimos uma cobertura de 100% em ambos os projetos (Calculadora e Biblioteca) tanto em braches quanto em testes em si.
+
+  Isso foi possível após inclusão de diversos novos testes automatizados que contemplaram os casos anteriormente apontados pelo jacoco como não cobertos.
+
+    Os resultados podem ser vistos nos arquivos index.html gerados pelo jacoco:
+
+- ESI-atividade-biblioteca/jacoco results biblioteca/V1/site/jacoco/index.html (cobertura inicial, calculada após incluir a dependência do jacoco e executar via mvn verify)
+- ESI-atividade-biblioteca/jacoco results biblioteca/V2/site/jacoco/index.html (cobertura final, calculada após incluir novos testes automatizados no projeto e executar)
